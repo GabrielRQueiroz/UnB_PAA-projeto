@@ -15,14 +15,14 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="pointer-events-none h-96 max-h-fit absolute w-screen top-0 left-0 overflow-y-hidden flex flex-col items-center justify-center">
+      <div className="pointer-events-none h-96 -z-10 max-h-fit absolute w-screen top-0 left-0 overflow-y-hidden flex flex-col items-center justify-center">
         <h2 className="font-bold text-4xl">
           Gere imagens com IA
           <span className="my-2 block text-center text-blue-300 text-5xl">
             SEM CUSTO
           </span>
         </h2>
-        <video className="opacity-50 top-0 absolute mx-auto -z-10 w-screen" controls preload="true" autoPlay loop muted>
+        <video tabIndex={-1} className="opacity-50 top-0 absolute mx-auto -z-20 w-screen" controls preload="true" autoPlay loop muted>
           <source src="/waves.mp4" type="video/mp4" /> 
         </video>
         <div className="z-10 absolute w-full h-1/2 bottom-0 bg-gradient-to-t from-black to-transparent"></div>
