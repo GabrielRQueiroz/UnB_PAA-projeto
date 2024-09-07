@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Results } from "./components/results";
 
 export default function Home() {
   return (
@@ -27,13 +28,7 @@ export default function Home() {
         <div className="z-10 absolute w-full h-1/2 bottom-0 bg-gradient-to-t from-black to-transparent"></div>
       </div>
 
-      <form action='post' className="bg-stone-900 gap-2 rounded-xl border-2 border-gray-700 transition-all duration-100 focus-within:border-blue-800 mx-auto text-xl mt-96 w-4/5 relative flex items-center justify-center h-20">
-        <label className="sr-only" htmlFor="search-input">Gerar imagem</label>
-        <input className="bg-transparent pl-4 h-full w-full outline-none" type="text" id="search-input" />
-        <button className="bg-stone-950 mr-4 shadow-sm right-0 py-3 px-10 border-2 border-blue-900 rounded transition-all duration-100 hover:bg-blue-900">
-          Gerar
-        </button>
-      </form>
+      <Results />
     </main>
   );
 }
