@@ -10,11 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-  results
+  children
 }: Readonly<{
   children: React.ReactNode;
-  results: React.ReactNode;
 }>) {
   return (
     <html lang="en">
