@@ -43,6 +43,7 @@ export default function Home() {
         draggable
         pauseOnHover
         theme="colored"
+        stacked
         transition={Bounce}
       />
     </main>
